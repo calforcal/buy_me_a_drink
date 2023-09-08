@@ -58,6 +58,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'pry'
+  gem 'rspec-rails'
   gem 'capybara'
 end
 
@@ -73,10 +74,13 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails'
   gem 'simplecov'
   gem 'shoulda-matchers'
   gem 'vcr'
   gem 'webmock'
 end
 
+
+gem "cssbundling-rails", "~> 1.2"
+
+gem "jsbundling-rails", "~> 1.1"
