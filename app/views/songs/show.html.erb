@@ -60,6 +60,15 @@
     }
 
   </style>
+    <script>
+    function setMoodAndSubmit(value) {
+      // Set the hidden field value based on the mood
+      document.getElementById('mood').value = value;
+
+      // Submit the form
+      document.forms[0].submit(); // Assumes this is the first (and only) form on the page
+    }
+  </script>
 </head>
 <body>
 
@@ -92,18 +101,6 @@
         When you choose a Taylor Swift song, we'll match it with a beer just as catchy! Get ready to sip on the perfect harmony of hops and harmonies. Cheers to T-Swizzle and Brew-sizzle!
       </p>
       <hr>
-      <form action="/your-action-url" method="post">
-        <!-- Hidden field for status -->
-        <input type="hidden" name="status" id="status" value="1">
-        <h3>How are you feeling today?</h3>
-          
-        <div class="btn-group" role="group" aria-label="Mood buttons">
-          <button type="submit" name="mood" value="happy" class="btn btn-primary">Happy</button>
-          <button type="submit" name="mood" value="sad" class="btn btn-danger">Sad</button>
-          <button type="submit" name="mood" value="neutral" class="btn btn-secondary">Neutral</button>
-        </div>
-        <h4>Let Taylor and a beverage improve your day!</h4>
-      </form>
     </div>
   </div>
 </div>

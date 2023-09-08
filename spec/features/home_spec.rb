@@ -8,7 +8,7 @@ RSpec.describe "/", type: :feature do
 
     it "should be the landing page with the title of the app" do
       visit root_path
-      expect(page).to have_content("Viewing Party")
+      expect(page).to have_content("TAYLOR SWIFT and BOOZE")
     end
 
     it "displays a form to select current mood" do
